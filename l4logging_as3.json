@@ -27,7 +27,7 @@
                     "class": "iRule",
                     "remark": "Logs incoming L4 Connection data",
                     "iRule": {
-                        "url": "https://raw.githubusercontent.com/pmscheffler/f5_l4logging"
+                        "url": "https://raw.githubusercontent.com/pmscheffler/f5_l4logging/main/l4logging.tcl"
                     }
                 }
             }
