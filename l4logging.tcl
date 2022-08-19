@@ -8,7 +8,8 @@ when CLIENT_ACCEPTED priority 100 {
 
     # could store the pool name in a Data Group
     # along with the protocol
-    set HSL-POOL [class match -value "default" equals ]
+    set HSL-POOL [class match -value "default" equals l4logging_hsl]
+    
     set hsl [HSL::open -proto UDP -pool $HSL-POOL]
 
     set client_logentry "Received a request from Client [IP::client_addr]:[TCP::client_port] to the VIP [IP::local_addr]:[TCP::local_port]"
